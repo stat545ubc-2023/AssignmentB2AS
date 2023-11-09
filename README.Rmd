@@ -1,0 +1,56 @@
+---
+title: "Scatter Plot"
+author: "Andras Szeitz"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r setup, include=FALSE}
+
+devtools::install_github("stat545ubc-2023/AssignmentB2AS")
+
+```
+
+
+Load the packages below.
+
+```{r}
+
+#loading libraries 
+library(datateachr)
+library(tidyverse)
+library(ggplot2)
+library(testthat)
+library(rlang)
+library(lifecycle)
+library(utf8)
+library(fansi)
+```
+
+#Exercise 1: Make a Function
+
+```{r}
+
+#I wrote a function using the cancer_sample dataset from mda deliverable 1 to generate a scatter plot.
+
+scatter_plot <- function(x, y, x_label = "X-axis", y_label = "Y-axis", title = "Scatter Plot") {
+  plot_data <- data.frame(x = x, y = y)
+  
+  # Suppressing warnings while creating the plot
+  suppressWarnings({
+    scatter_plot <- ggplot(plot_data, aes(x = x, y = y)) +
+      geom_point(size = 1, color = "purple") +
+      labs(x = x_label, y = y_label, title = title)
+  })
+  
+  # Printing the scatter plot
+  print(scatter_plot)
+}
+
+scatter_plot(x = cancer_sample$concavity_mean, y = cancer_sample$smoothness_mean)
+
+```

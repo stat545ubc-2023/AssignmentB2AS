@@ -5,7 +5,7 @@
 \alias{scatter_plot}
 \title{Generate a scatter plot.}
 \usage{
-  scatter_plot(data, x, y, x_axis_name)
+  scatter_plot(data, x, y, x_axis_name = "X-axis", y_axis_name = "Y-axis", title = "Scatter Plot")
 }
 \arguments{
   \item{data}{
@@ -25,6 +25,14 @@
   \item{x_axis_name}{
     The name for the x-axis, provided by the user calling this function.
   }
+  
+  \item{y_axis_name}{
+    The name for the y-axis, provided by the user calling this function.
+  }
+  
+  \item{title}{
+    The title for the scatter plot.
+  }
 }
 \value{
   A scatter plot with 'x' on the x-axis and 'y' on the y-axis.
@@ -36,7 +44,9 @@
 }
 \examples{
   scatter_plot(data = datateachr::cancer_sample,
-               x = perimeter_mean,
-               y = texture_mean,
-               x_axis_name = "Perimeter")
+               x = "perimeter_mean",
+               y = "texture_mean",
+               x_axis_name = "Perimeter",
+               y_axis_name = "Texture",
+               title = "Scatter Plot Example")
 }

@@ -7,7 +7,7 @@
 #' @param x_axis_name Name of the x-axis 
 #' @return A scatter plot
 #' @examples
-#' scatter_plot(x = datateachr::cancer_sample$perimeter_mean, y = cancer_sample$texture_mean)
+#' scatter_plot(x = cancer_sample$perimeter_mean, y = cancer_sample$texture_mean)
 #' @export
 scatter_plot <- function(x, y, x_label = "X-axis", y_label = "Y-axis", title = "Scatter Plot") {
   plot_data <- data.frame(x = x, y = y)

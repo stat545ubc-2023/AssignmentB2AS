@@ -26,5 +26,5 @@
   distribution of a continuous numeric variable (x) across multiple fills(categorical values).
 }
 \examples{
-  scatter_plot(x = datateachr::cancer_sample$perimeter_mean, y = cancer_sample$texture_mean)
+  scatter_plot(x = datateachr::cancer_sample$perimeter_mean, y = datateachr::cancer_sample$texture_mean)
 }

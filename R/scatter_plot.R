@@ -1,10 +1,11 @@
 #' scatter_plot
 #' @description The AssignmentB2AS package generates a scatter plot with ggplot2. Using selected data sets, this package offers a quick way to assess if there is a relationship between independent (x) and dependent (y) variables with the visualization options of bullet size 1 and purple color.
 #'
-#' @param data The input dataset
-#' @param x An independent variable in the dataset, 
-#' @param y A  dependent variable in the dataset, 
-#' @param x_axis_name Name of the x-axis 
+#' @param x Data for the x-axis.
+#' @param y Data for the y-axis.
+#' @param x_label Label for the x-axis.
+#' @param y_label Label for the y-axis.
+#' @param title Title of the plot. 
 #' @return A scatter plot
 #' @examples
 #' Load the dataset
@@ -12,6 +13,9 @@
 #' Example code here
 #' scatter_plot(x = datateachr::cancer_sample$perimeter_mean, y = datateachr::cancer_sample$texture_mean)
 #' @export
+
+library(datateachr)
+library(ggplot2)
 scatter_plot <- function(x, y, x_label = "X-axis", y_label = "Y-axis", title = "Scatter Plot") {
   plot_data <- data.frame(x = x, y = y)
   

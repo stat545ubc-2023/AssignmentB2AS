@@ -74,7 +74,7 @@ scatter_plot <- function(x, y, x_label = "X-axis", y_label = "Y-axis", title = "
   print(scatter_plot)
 }
 
-# Your scatter plot code here
+# Scatter plot code
 scatter_plot(x = cancer_sample$concavity_mean, y = cancer_sample$smoothness_mean)
 
 ```

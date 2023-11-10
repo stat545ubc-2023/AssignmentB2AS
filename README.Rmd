@@ -1,7 +1,7 @@
 ---
-title: "Scatter Plot"
+title: "AssignmentB2AS"
 author: "Andras Szeitz"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -9,24 +9,33 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r setup, include=FALSE}
+```{r}
+options(repos = c(CRAN = "https://cran.rstudio.com"))
+```
 
+
+```{r}
 install.packages("devtools")
+```
+
+
+```{r}
 install.packages("usethis")
+```
+
+Load a couple of packages
+
+```{r}
 library(devtools)
 library(usethis)
-
 ```
 
 
-
-```{r setup, include=FALSE}
-
-devtools::install_github("stat545ubc-2023/AssignmentB2AS")
-
+```{r}
+devtools::install_github("stat545ubc-2023/AssignmentB2AS", force = TRUE)
 ```
 
-Load the packages below.
+Load more packages
 
 ```{r}
 
@@ -39,14 +48,18 @@ library(rlang)
 library(lifecycle)
 library(utf8)
 library(fansi)
+
 ```
 
-#Exercise 1: Make a Function
+# Make a scatter plot
+
 
 ```{r}
 
 #I wrote a function using the cancer_sample dataset from mda deliverable 1 to generate a scatter plot.
 
+library(datateachr)
+library(ggplot2)
 scatter_plot <- function(x, y, x_label = "X-axis", y_label = "Y-axis", title = "Scatter Plot") {
   plot_data <- data.frame(x = x, y = y)
   
@@ -61,6 +74,9 @@ scatter_plot <- function(x, y, x_label = "X-axis", y_label = "Y-axis", title = "
   print(scatter_plot)
 }
 
+# Your scatter plot code here
 scatter_plot(x = cancer_sample$concavity_mean, y = cancer_sample$smoothness_mean)
 
 ```
+
+

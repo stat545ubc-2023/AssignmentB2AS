@@ -1,5 +1,5 @@
 ---
-title: "AssignmentB2AS"
+title: "scatter_plot"
 author: "Andras Szeitz"
 output: github_document
 ---

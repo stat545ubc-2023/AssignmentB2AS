@@ -1,4 +1,4 @@
-AssignmentB2AS
+scatter_plot
 ================
 Andras Szeitz
 
@@ -16,7 +16,7 @@ install.packages("devtools")
     ## package 'devtools' successfully unpacked and MD5 sums checked
     ## 
     ## The downloaded binary packages are in
-    ##  C:\Users\My Dell\AppData\Local\Temp\RtmpwF4wMZ\downloaded_packages
+    ##  C:\Users\My Dell\AppData\Local\Temp\RtmpE3N7QC\downloaded_packages
 
 ``` r
 install.packages("usethis")
@@ -28,7 +28,7 @@ install.packages("usethis")
     ## package 'usethis' successfully unpacked and MD5 sums checked
     ## 
     ## The downloaded binary packages are in
-    ##  C:\Users\My Dell\AppData\Local\Temp\RtmpwF4wMZ\downloaded_packages
+    ##  C:\Users\My Dell\AppData\Local\Temp\RtmpE3N7QC\downloaded_packages
 
 Load a couple of packages
 
@@ -50,9 +50,9 @@ devtools::install_github("stat545ubc-2023/AssignmentB2AS", force = TRUE)
 
     ## 
     ## ── R CMD build ─────────────────────────────────────────────────────────────────
-    ##       ✔  checking for file 'C:\Users\My Dell\AppData\Local\Temp\RtmpwF4wMZ\remotes1f082b0563b0\stat545ubc-2023-AssignmentB2AS-8076713/DESCRIPTION'
+    ##          checking for file 'C:\Users\My Dell\AppData\Local\Temp\RtmpE3N7QC\remotes1f546719497a\stat545ubc-2023-AssignmentB2AS-9a190c0/DESCRIPTION' ...  ✔  checking for file 'C:\Users\My Dell\AppData\Local\Temp\RtmpE3N7QC\remotes1f546719497a\stat545ubc-2023-AssignmentB2AS-9a190c0/DESCRIPTION'
     ##       ─  preparing 'AssignmentB2AS':
-    ##    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+    ##    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
     ##       ─  checking for LF line-endings in source and make files and shell scripts
     ##   ─  checking for empty or unneeded directories
     ##   ─  building 'AssignmentB2AS_0.1.0.tar.gz'

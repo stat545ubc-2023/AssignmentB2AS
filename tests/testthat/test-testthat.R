@@ -6,6 +6,6 @@ test_that("Test 1: Function creates a ggplot with a custom x-axis name", {
   expect_is(expected_val, "ggplot")
 })
 
-test_that("Test 4: Function has categorical fill values", {
+test_that("Test 2: Function has categorical fill values", {
   expect_error(scatter_plot( data=cancer_sample, x = cancer_sample$perimeter_mean, y = cancer_sample$texture_mean))
   })

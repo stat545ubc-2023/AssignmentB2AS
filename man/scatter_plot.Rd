@@ -36,7 +36,8 @@
 }
 \examples{
   scatter_plot(data = datateachr::cancer_sample,
-               x = "perimeter_mean",
-               y = "texture_mean",
+               x = datateachr::cancer_sample$perimeter_mean,
+               y = datateachr::cancer_sample$texture_mean,
                title = "Scatter Plot Example")
 }
+

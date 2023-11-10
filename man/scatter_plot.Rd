@@ -35,9 +35,9 @@
   uses a bullet size of 1 and is colored purple.
 }
 \examples{
-  scatter_plot(data = datateachr::cancer_sample,
-               x = datateachr::cancer_sample$perimeter_mean,
-               y = datateachr::cancer_sample$texture_mean,
+  data <- datateachr::cancer_sample
+  scatter_plot(data = data,
+               x = data$perimeter_mean,
+               y = data$texture_mean,
                title = "Scatter Plot Example")
 }
-

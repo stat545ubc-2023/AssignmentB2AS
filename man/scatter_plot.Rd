@@ -4,7 +4,7 @@
 \alias{scatter_plot}
 \title{scatter_plot}
 \usage{
-  scatter_plot(data, x, fill, x_axis_name)
+  scatter_plot(data, x, y)
 }
 \arguments{
   \item{data}{The input dataset}
@@ -12,19 +12,16 @@
   \item{x}{A continuous numerical variable in the dataset, it is one of the variable
     being investigated}
   
-  \item{fill}{A variable in the dataset, it is one of the variable being investigated}
-  
   \item{x_axis_name}{This is the name of the x-axis given by the user who uses this function}
 }
 \value{
-  A scatter plot with value of x in x-axis across different fills and scatter as the y-axis
+  A scatter plot with value of x in x-axis y in y-axis
 }
 \description{
-  The scatter_plot function creates a scatter plot wiht alpha=0.5
-  based on the given inputs, dataset, x, and fill values, using ggplot2.
-  This function can be used as a visualization tool to represent the
-  distribution of a continuous numeric variable (x) across multiple fills(categorical values).
+  The AssignmentB2AS package generates a scatter plot with ggplot2. Using selected data sets, this package offers a quick way to assess if there is a relationship between independent (x) and dependent (y) variables with the visualization options of bullet size 1 and purple color.
+  
 }
+
 \examples{
   scatter_plot(x = datateachr::cancer_sample$perimeter_mean, y = datateachr::cancer_sample$texture_mean)
 }

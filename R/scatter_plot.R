@@ -5,11 +5,9 @@
 #' @param x An independent variable in the dataset, 
 #' @param y A  dependent variable in the dataset, 
 #' @param x_axis_name Name of the x-axis 
-#'
+#' @return A scatter plot
 #' @examples
 #' scatter_plot(x = cancer_sample$perimeter_mean, y = cancer_sample$texture_mean)
-#'
-#' @return A scatter plot
 #' @export
 scatter_plot <- function(x, y, x_label = "X-axis", y_label = "Y-axis", title = "Scatter Plot") {
   plot_data <- data.frame(x = x, y = y)
